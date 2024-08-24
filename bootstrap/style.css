@@ -243,3 +243,147 @@ body {
 .city-card:hover {
     transform: translateY(-5px);
 }
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    height: 100%;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2b0a3d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.3rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.navbar-links a:hover {
+    background-color: #4a1a6d;
+    color: #f39c12;
+}
+
+.navbar-links .active {
+    background-color: #6b29a0;
+    color: #fff;
+}
+
+/* Project Management Dashboard */
+.project-management-dashboard {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.project-management-dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Listing */
+.project-listing, .task-management, .project-timeline, .resource-allocation {
+    margin-bottom: 2rem;
+}
+
+.project-listing h2, .task-management h2, .project-timeline h2, .resource-allocation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #6b29a0;
+    padding-bottom: 0.5rem;
+}
+
+.project-table, .task-table, .resource-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-table th, .task-table th, .resource-table th {
+    background-color: #2b0a3d;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.project-table td, .task-table td, .resource-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-table tr:hover, .task-table tr:hover, .resource-table tr:hover {
+    background-color: #f7b731;
+    color: #fff;
+}
+
+.action-link {
+    color: #6b29a0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+/* Timeline Placeholder */
+.timeline-container {
+    background-color: #f0f2f5;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+
+    .project-table, .task-table, .resource-table {
+        font-size: 14px;
+    }
+}
+

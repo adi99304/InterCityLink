@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Management - InterCityLink</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="Technical Approach (2).png" alt="InterCityLink Logo" class="navbar-logo">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="department-registration.html">Department Registration</a>
+            <a href="project-management.html" class="active">Project Management</a>
+            <a href="site-coordination.html">Site Coordination</a>
+            <a href="discussion-forum.html">Discussion Forum</a>
+            <a href="training.html">Training & Capacity Building</a>
+            <a href="reports.html">Reports & Analytics</a>
+            <a href="notifications.html">Alerts</a>
+        </div>
+    </div>
+
+    <!-- Project Management Dashboard -->
+    <div class="project-management-dashboard">
+        <h1>Project Management</h1>
+
+        <!-- Project Listing Section -->
+        <div class="project-listing">
+            <h2>Ongoing Projects</h2>
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Department</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Urban Road Development</td>
+                        <td>Public Works</td>
+                        <td>2024-05-10</td>
+                        <td>2024-12-01</td>
+                        <td>In Progress</td>
+                        <td><a href="project-details.html?project_id=1" class="action-link">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Water Supply System Upgrade</td>
+                        <td>Water Management</td>
+                        <td>2024-06-01</td>
+                        <td>2025-01-15</td>
+                        <td>In Progress</td>
+                        <td><a href="project-details.html?project_id=2" class="action-link">View Details</a></td>
+                    </tr>
+                    <!-- Add more project rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Task Management Section -->
+        <div class="task-management">
+            <h2>Task Management</h2>
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Assigned To</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Site Inspection</td>
+                        <td>Aditya Hegde</td>
+                        <td>2024-08-30</td>
+                        <td>Pending</td>
+                        <td><a href="task-details.html?task_id=1" class="action-link">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Resource Allocation</td>
+                        <td>rohan singh</td>
+                        <td>2024-09-05</td>
+                        <td>In Progress</td>
+                        <td><a href="task-details.html?task_id=2" class="action-link">View Details</a></td>
+                    </tr>
+                    <!-- Add more task rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Project Timeline Section -->
+        <div class="project-timeline">
+            <h2>Project Timeline</h2>
+            <div class="timeline-container">
+                <!-- Timeline visualization can be created using libraries like D3.js or Timeline.js -->
+                <p>Timeline Visualization Placeholder</p>
+            </div>
+        </div>
+
+        <!-- Resource Allocation Section -->
+        <div class="resource-allocation">
+            <h2>Resource Allocation</h2>
+            <table class="resource-table">
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Department</th>
+                        <th>Allocated Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Excavator</td>
+                        <td>Public Works</td>
+                        <td>2024-08-15</td>
+                        <td>Allocated</td>
+                        <td><a href="resource-details.html?resource_id=1" class="action-link">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Water Tanker</td>
+                        <td>Water Management</td>
+                        <td>2024-08-20</td>
+                        <td>In Use</td>
+                        <td><a href="resource-details.html?resource_id=2" class="action-link">View Details</a></td>
+                    </tr>
+                    <!-- Add more resource rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
