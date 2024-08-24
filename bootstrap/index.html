@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
     <title>InterCityLink</title>
+    
+    
 </head>
 <body>
 
@@ -17,27 +17,87 @@
             <a href="#" class="active">Home</a>
             <a href="department-registration.html">Department Registration</a>
             <a href="project-management.html">Project Management</a>
-            <a href="resource-sharing.html">Resource Sharing</a>
             <a href="site-coordination.html">Site Coordination</a>
             <a href="discussion-forum.html">Discussion Forum</a>
             <a href="training.html">Training & Capacity Building</a>
-            <a href="notifications.html">Notifications & Alerts</a>
             <a href="reports.html">Reports & Analytics</a>
-            <a href="help.html">Help & Support</a>
+            <a href="notifications.html">Alerts</a>
         </div>
     </div>
-
-    <!-- Carousel -->
-<!-- <div class="carousel">
-    <div class="carousel-images">
-        <img src="carousel1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <img src="image3.jpg" alt="Image 3">
+    <!-- Dashboard Overview Section -->
+    <div class="dashboard-overview">
+        <div class="stat-card">
+            <h3>Ongoing Projects</h3>
+            <p>15</p>
+        </div>
+        <div class="stat-card">
+            <h3>Registered Departments</h3>
+            <p>8</p>
+        </div>
+        <div class="stat-card">
+            <h3>Active Resources</h3>
+            <p>25</p>
+        </div>
+        <div class="stat-card">
+            <h3>New Notifications</h3>
+            <p>5</p>
+        </div>
     </div>
-    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-</div> -->
+    
+    <!-- Map Section -->
+    <!-- <div class="map-section">
+        <h3>Project Locations</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692905078795!5m2!1sen!2sin"
+            width="80%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div> -->
 
+    <!-- Search and Filter -->
+    <div class="map-section">
+        <h3>Project Locations</h3>
+        <iframe id="cityMap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692905078795!5m2!1sen!2sin"
+            width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <div class="city-cards">
+        <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692905078795!5m2!1sen!2sin">
+            <img src="mumbai-logo.png" alt="Mumbai Logo">
+            <h4>Mumbai</h4>
+        </div>
+        <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539542!2d77.04417132934864!3d28.527252358592826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1692905201909!5m2!1sen!2sin">
+            <img src="delhi-logo.png" alt="Delhi Logo">
+            <h4>Delhi</h4>
+        </div>
+       
+            <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252657.67185518684!2d88.34372490960387!3d22.57264461657719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02790b7832a0cb%3A0x6c7b2a6578d1cb7e!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1692905476582!5m2!1sen!2sin">
+                <img src="kolkata-logo.png" alt="Kolkata Logo">
+                <h4>Kolkata</h4>
+            </div>
+            <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155770.70311776238!2d77.53539178960456!3d12.971598616082416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b5f6b6b03b%3A0x8e64f8a43b81316!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1692905476584!5m2!1sen!2sin">
+                <img src="bangalore-logo.png" alt="Bangalore Logo">
+                <h4>Bangalore</h4>
+            </div>
+            <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278347.5043165525!2d78.42705914618616!3d17.3850441859538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9305b2c3a9b9%3A0x21b92a14e2aa4743!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1692905476586!5m2!1sen!2sin">
+                <img src="hyderabad-logo.png" alt="Hyderabad Logo">
+                <h4>Hyderabad</h4>
+            </div>
+            <div class="city-card" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107758.78747059518!2d78.03412456344004!3d27.176670943954612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3970a24c737a7cdb%3A0x9f7a7b3b3b08d345!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1692905476588!5m2!1sen!2sin">
+                <img src="agra-logo.png" alt="Agra Logo">
+                <h4>Agra</h4>
+            </div>
+            <!-- Add more city cards as needed -->
+        
+        
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-

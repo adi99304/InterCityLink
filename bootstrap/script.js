@@ -1,27 +1,15 @@
-<script>
-    let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    const cityCards = document.querySelectorAll('.city-card');
+    const cityMap = document.getElementById('cityMap');
 
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.carousel-images img');
-        if (index >= slides.length) {
-            currentSlide = 0;
-        } else if (index < 0) {
-            currentSlide = slides.length - 1;
-        } else {
-            currentSlide = index;
-        }
-        const offset = -currentSlide * 100;
-        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
-    }
+    cityCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const mapSrc = this.getAttribute('data-map');
+            cityMap.src = mapSrc;
 
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
-
-    /* Auto-slide the carousel */
-    setInterval(nextSlide, 3000); /* Change slide every 3 seconds */
-</script>
+            // Remove 'active' class from all cards and add to clicked card
+            cityCards.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
