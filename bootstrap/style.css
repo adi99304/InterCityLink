@@ -1,0 +1,96 @@
+
+body{
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #123c66; /* Blue color for the navbar */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Adjust margin below the navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar logo */
+.navbar-logo {
+    height: 50px; /* Adjust height as needed */
+}
+
+/* Navbar links */
+.navbar-links a {
+    color: white; /* Default text color */
+    padding: 10px 15px; /* Adjust padding for links */
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+    margin: 0 10px; /* Adjust margin between links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.navbar-links a:hover {
+    background-color: white; /* Highlighted background color */
+    color: #123c66; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Active link styling */
+.navbar-links a.active {
+    background-color: white; /* Active link background color */
+    color: #123c66; /* Active link text color */
+    border-radius: 5px;
+}
+
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    width: 100%; /* Fit the width of the page */
+    height: calc(100vw * 9 / 16); /* Maintain a 16:9 aspect ratio based on viewport width */
+    max-height: 50vh; /* Ensure the carousel doesn't exceed half the viewport height */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensure the images fill the carousel's height */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%; /* Ensure images fit the carousel's height */
+    object-fit: cover; /* Adjust image to cover the entire carousel area */
+    border-radius: 5px;
+}
+
+/* Carousel control styling */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
